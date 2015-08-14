@@ -1,17 +1,24 @@
 {
   "name": "nminions",
-  "description": "helpers for n services",
-  "version": "0.1.0",
+  "description": "base-framework for n-micro-services",
+  "version": "0.2.0",
   "author": "Toni Wagner <i@itsatony.com>",
   "engine": "node >= 0.10",
   "repository": {
     "type": "git",
     "url": "git://github.com/itsatony/nminions.git"
   },
-	"main": "lib/nminions",		
+  "main": "lib/nminions",
   "dependencies": {
-	  "pmx": "latest",
-	  "q": "latest"
+    "bunyan": "^1.4.0",
+    "bunyan-format": "^0.2.1",
+    "json-stringify-safe": "latest",
+    "minimist": "^1.1.3",
+    "nids": "git+ssh://git@github.com:itsatony/nIds.git",
+    "node-uuid": "^1.4.3",
+    "nrmq": "git+ssh://git@github.com:itsatony/nrmq.git",
+    "pmx": "latest",
+    "q": "latest"
   },
   "devDependencies": {
     "mocha": "1.13.0",
