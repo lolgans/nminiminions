@@ -13,6 +13,7 @@
     "bunyan": "^1.4.0",
     "bunyan-format": "^0.2.1",
     "json-stringify-safe": "latest",
+    "njson": "latest",
     "minimist": "^1.1.3",
     "nids": "git+ssh://git@github.com:itsatony/nIds.git",
     "node-uuid": "^1.4.3",
