@@ -1,2 +1,2 @@
-# nminons
+# nMinions
 helpers for n services
