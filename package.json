@@ -1,7 +1,7 @@
 {
   "name": "nminions",
   "description": "base-framework for n-micro-services",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "Toni Wagner <i@itsatony.com>",
   "engine": "node >= 0.10",
   "repository": {
@@ -13,7 +13,7 @@
     "bunyan": "^1.4.0",
     "bunyan-format": "^0.2.1",
     "json-stringify-safe": "latest",
-    "njson": "latest",
+		"restler": "latest",
     "minimist": "^1.1.3",
     "nids": "git+ssh://git@github.com:itsatony/nIds.git",
     "node-uuid": "^1.4.3",
