@@ -10,16 +10,16 @@
   },
   "main": "lib/nminions",
   "dependencies": {
-    "bunyan": "^1.4.0",
+    "bunyan": "^1.5.1",
     "bunyan-format": "^0.2.1",
     "json-stringify-safe": "latest",
-		"restler": "latest",
     "minimist": "^1.1.3",
     "nids": "git+ssh://git@github.com:itsatony/nIds.git",
     "node-uuid": "^1.4.3",
     "nrmq": "git+ssh://git@github.com:itsatony/nrmq.git",
     "pmx": "latest",
-    "q": "latest"
+    "q": "latest",
+    "restler": "latest"
   },
   "devDependencies": {
     "mocha": "1.13.0",
