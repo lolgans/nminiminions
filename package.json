@@ -1,25 +1,21 @@
 {
-  "name": "nminions",
-  "description": "base-framework for n-micro-services",
-  "version": "0.2.3",
-  "author": "Toni Wagner <i@itsatony.com>",
+  "name": "nminiminions",
+  "description": "base-framework for n-micro-services without RabbitMq",
+  "version": "0.0.1",
+  "author": "Tobias Katzenberger <t.katzelol@gmail.com> by Toni Wagner <i@itsatony.com>",
   "engine": "node >= 0.10",
   "repository": {
     "type": "git",
-    "url": "git://github.com/itsatony/nminions.git"
+    "url": "git://github.com/lolgans/lolgans-nminiminions"
   },
   "main": "lib/nminions",
   "dependencies": {
     "bunyan": "^1.5.1",
     "bunyan-format": "^0.2.1",
-    "json-stringify-safe": "latest",
     "minimist": "^1.1.3",
-    "nids": "git+ssh://git@github.com:itsatony/nIds.git",
     "node-uuid": "^1.4.3",
-    "nrmq": "git+ssh://git@github.com:itsatony/nrmq.git",
     "pmx": "latest",
-    "q": "latest",
-    "restler": "latest"
+    "q": "latest"
   },
   "devDependencies": {
     "mocha": "1.13.0",

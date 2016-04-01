@@ -1,2 +1,2 @@
 # nMinions
-helpers for n services
+helpers for n services without rabbitMQ

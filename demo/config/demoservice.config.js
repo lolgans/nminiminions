@@ -1,58 +1,33 @@
-var BunyanFormat = require('bunyan-format');
+var basePath = __dirname + "/../";
 var config = {};
 
+var uuid = require('node-uuid');
 
-// --- BASICS; id should be 'unique' (for multiple instances), name general  (logging, ...)
-config.id = 'echo_' + Date.now();
-config.name = 'echo';
-
-
-// --- DIRECTORIES
+// - DIRECTORIES
 config.directories = {
-	home: process.cwd(),
-	plugins: process.cwd() + '/lib/plugins',
-	config: process.cwd() + '/config',
-	logs: process.cwd() + '/logs',
+	home: basePath,
+	plugins: basePath + '/plugins',
+	config: basePath + '/config',
+	logs: basePath + '/logs'
 };
 
+// - ID & NAME
+config.id = 'ChannelController_'+ uuid.v1();
+config.name = 'ChannelController';
+config.shortcut = 'CC';
 
-// --- PLUGINS
-config.plugins = [
-	'pushMessages',
-	'resourceAnnouncer',
-	'rpcApiCall'
-];
+// - PLUGINS
+config.plugins = [];
 
-
-// --- BASIC bunyan logger options
-config.logOutStream = BunyanFormat({ outputMode: 'short' });
-
-
-// --- ECHO PLUGIN ... 
-config.plugins.push(
-	{
-		name: 'echo',
-		file: config.directories.plugins + '/echo.js'
-	}
-);
-config.echo = {
-	rpcListeningRoute: 'echo'
+//ChannelController-Plugin
+var channelController = {
+	name: 'channelController',
+	file: basePath + '/plugins/ChannelController'
 };
-config.mqs.echo = {
-	name: 'echo_' +  config.id,
-	queueName: config.id + '_' + UUID,
-	subscriptionRoutingKey: config.id + '_' + UUID,				
-	server: {
-		host: '127.0.0.1',
-		port: 5672,
-		login: 'cheergg',
-		password: 'cgg@rmq'
-	},
-	exchange: {
-		name: 'amq.topic',
-		type: 'topic'
-	}
+
+config.plugins.push(channelController);
+config.channelController = {
+	// plugin config goes here
 };
 
 module.exports = config;
-
