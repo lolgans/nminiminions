@@ -2,7 +2,7 @@ var q = require('q');
 var Promise = q.Promise;
 
 var plugin = {
-	name: 'DemoPlugin',
+	name: 'demoPlugin',
 	init: init,
 	config: null
 };
@@ -37,6 +37,7 @@ function init() {
 function doSth() {
 	return Promise(
 		function (resolve, reject) {
+			console.log(plugin.config.itWorksConfig);
 			resolve(true);
 		}
 	)

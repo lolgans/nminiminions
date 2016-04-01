@@ -1,7 +1,7 @@
 {
   "name": "nminiminions",
   "description": "base-framework for n-micro-services without RabbitMq",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Tobias Katzenberger <t.katzelol@gmail.com> by Toni Wagner <i@itsatony.com>",
   "engine": "node >= 0.10",
   "repository": {

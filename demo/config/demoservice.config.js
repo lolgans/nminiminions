@@ -6,7 +6,7 @@ var uuid = require('node-uuid');
 // - DIRECTORIES
 config.directories = {
 	home: basePath,
-	plugins: basePath + '/plugins',
+	plugins: basePath + '/lib/plugins',
 	config: basePath + '/config',
 	logs: basePath + '/logs'
 };
@@ -20,14 +20,15 @@ config.shortcut = 'CC';
 config.plugins = [];
 
 //ChannelController-Plugin
-var channelController = {
-	name: 'channelController',
-	file: basePath + '/plugins/ChannelController'
+var demoPlugin = {
+	name: 'demoPlugin',
+	file: basePath + 'lib/plugins/DemoPlugin'
 };
 
-config.plugins.push(channelController);
-config.channelController = {
+config.plugins.push(demoPlugin);
+config.demoPlugin = {
 	// plugin config goes here
+	itWorksConfig: "Hello it works :)"
 };
 
 module.exports = config;
