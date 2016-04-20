@@ -1,12 +1,12 @@
 {
   "name": "nminiminions",
   "description": "base-framework for n-micro-services without RabbitMq",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "author": "Tobias Katzenberger <t.katzelol@gmail.com>",
   "engine": "node >= 0.10",
   "repository": {
     "type": "git",
-    "url": "git://github.com/lolgans/lolgans-nminiminions.git"
+    "url": "git://github.com/lolgans/nminiminions.git"
   },
   "main": "lib/nminions",
   "dependencies": {
@@ -22,6 +22,6 @@
     "should": "2.0.1"
   },
   "bugs": {
-    "url": "https://github.com/lolgans/lolgans-nminiminions/issues"
+    "url": "https://github.com/lolgans/nminiminions/issues"
   }
 }
